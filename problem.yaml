@@ -1,0 +1,6 @@
+limits:
+  memory: 1024
+validation: default
+license: "cc by-sa"
+author: Christoph Dürr and Nadia Brauner Vettier
+uuid: 144f8571-420c-4f76-a506-3c652ec8af83

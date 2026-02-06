@@ -1,0 +1,47 @@
+graph G {
+    node [shape="circle", fixedsize="true"]
+    graph [rankdir="TD", layout="dot"]
+    subgraph cluster_1 {
+        0
+        1 -- 2
+        2 -- 3
+        3 -- 4
+        2 -- 4
+        5 -- 6
+        5 -- 8
+        8 -- 6
+        7 -- 9
+        label = "sample instance 1"
+    }
+    subgraph cluster_2 {
+        v0 [label="0"]
+        v1 [label="1"]
+        v2 [label="2"]
+        v3 [label="3"]
+        v4 [label="4"]
+        v5 [label="5"]
+        v6 [label="6"]
+        v7 [label="7"]
+        v8 [label="8"]
+        v9 [label="9"]
+        v10 [label="10"]
+        v11 [label="11"]
+        v12 [label="12"]
+
+        v11
+        v10 -- v9
+        v10 -- v7
+        v9 -- v8
+        v7 -- v8
+        v7 -- v6
+        v1 -- v2
+        v2 -- v6
+        v6 -- v12
+        v2 -- v3
+        v4 -- v5
+        v4 -- v3
+        v3 -- v5
+        v0 -- v1
+        label = "sample instance 2"
+    }
+}

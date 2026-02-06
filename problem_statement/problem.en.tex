@@ -1,0 +1,31 @@
+\problemname{Contract killer}
+
+\begin{center}
+\includegraphics[height=8cm]{contract-killer.png}
+\end{center}
+
+
+In the film “I Hired a Contract Killer,” Henri Boulange decides to end his life and hires a contract killer to do it. While waiting patiently for the killer to arrive in a café, he meets a flower seller. He immediately falls in love with her and now wants to stay alive. No longer able to contact the hired killer, he must flee.
+
+What follows is a chase that can be described as follows. The city is modeled by a graph, whose vertices are numbered from $0$ to $n-1$. First, Henri chooses a vertex, then the killer chooses another vertex. The rest of the chase consists of several rounds. At the beginning of a round, Henri can choose to stay on his vertex or move to a neighboring vertex. Then it is the killer's turn to choose to stay on his vertex or move to a neighboring vertex. If at that moment the killer is on the same vertex as Henri, then he will kill him. Otherwise, a new round begins. Help Henri identify the safe vertices that guarantee he will stay alive if he starts in those rooms. More precisely, indicate the sum of the identifiers of these vertices.
+
+\section*{Input}
+The first line of the input contains two integers $n$ and $m$, where $n$ indicates the number of vertices and $m$ the number of edges with $2 \leq n \leq 1.000$ and $0 \leq m \leq 30.000$. Following the first line are $m$ lines detailing the edges. Each of these lines contains two integers $u$ and $v$ with $0 \leq u < v < n$ indicating an edge between the vertices $u$ and $v$.
+
+\section*{Output}
+Output a single line containing an integer: the sum of the safe vertex indices.
+
+
+\section*{Samples}
+
+In the first test case, vertices $0,1,2,3,4$ are safe, while the others are not. For example if Henri chooses to start on one of the vertices of the cycle $5-6-8-5$, then the killer can choose another vertex on this cycle and Henri cannot avoid being at distance one from the killer, and therefore gets killed.
+\begin{center}
+\includegraphics[width=8cm]{sample1.pdf}
+\end{center}
+
+In the second test case, only vertices $7,8,9,10,11$ are safe.
+\begin{center}
+\includegraphics[width=8cm]{sample2.pdf}
+\end{center}
+
+

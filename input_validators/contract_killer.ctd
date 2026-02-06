@@ -1,0 +1,4 @@
+INT(2, 1000, n) SPACE INT(0, 30000, m) NEWLINE
+REP(m)
+    INT(0, n, u) SPACE INT(u, n, v) ASSERT(u < v) ASSERT(v < n) NEWLINE
+END
